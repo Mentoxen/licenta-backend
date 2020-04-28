@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/what-we-got-items",
+      "handler": "what-we-got-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-we-got-items/count",
+      "handler": "what-we-got-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-we-got-items/:id",
+      "handler": "what-we-got-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/what-we-got-items",
+      "handler": "what-we-got-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/what-we-got-items/:id",
+      "handler": "what-we-got-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/what-we-got-items/:id",
+      "handler": "what-we-got-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

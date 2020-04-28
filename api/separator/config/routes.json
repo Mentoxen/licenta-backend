@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/separator",
+      "handler": "separator.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/separator",
+      "handler": "separator.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/separator",
+      "handler": "separator.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

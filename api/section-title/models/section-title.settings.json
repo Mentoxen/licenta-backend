@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_titles",
+  "info": {
+    "name": "Ce gasesti"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

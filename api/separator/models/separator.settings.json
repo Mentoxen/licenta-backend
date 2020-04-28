@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "separators",
+  "info": {
+    "name": "Separator"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

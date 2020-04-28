@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "what_we_got_items",
+  "info": {
+    "name": "What we got item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
