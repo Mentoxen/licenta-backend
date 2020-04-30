@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ultimele-noutati",
+      "handler": "ultimele-noutati.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ultimele-noutati",
+      "handler": "ultimele-noutati.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ultimele-noutati",
+      "handler": "ultimele-noutati.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
