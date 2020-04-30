@@ -8355,17 +8355,17 @@ strapi-admin@3.0.0-beta.20:
     webpackbar "^3.2.0"
     yup "^0.27.0"
 
-strapi-connector-mongoose@3.0.0-beta.20:
-  version "3.0.0-beta.20"
-  resolved "https://registry.yarnpkg.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.0.0-beta.20.tgz#e6b973ec1436bffa7cc172220161fa6537c28e7a"
-  integrity sha512-BffigLYv9K0q18mYR8ANrGn4xXlvRg5SYuOEaGJhbtvOISdzRItt6WiVZzHZlMxDOYBFkbKNHxruM/YC6QVMEg==
+strapi-connector-mongoose@^3.0.0-beta.20.1:
+  version "3.0.0-beta.20.1"
+  resolved "https://registry.yarnpkg.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.0.0-beta.20.1.tgz#f4d84eab550e72a7d3bb762dc260503f3aeece6c"
+  integrity sha512-o34a6yMJihbYy4DEb/Fnzgc4Q4a7qmFeSD3r3F/NoqtzG4eeqrx46oEIO0XVRTHDw48ZqdcUBChgvMLfI2KW1A==
   dependencies:
     lodash "^4.17.11"
     mongoose "5.8.0"
     mongoose-float "^1.0.4"
     mongoose-long "^0.2.1"
     pluralize "^7.0.0"
-    strapi-utils "3.0.0-beta.20"
+    strapi-utils "3.0.0-beta.20.1"
 
 strapi-database@3.0.0-beta.20:
   version "3.0.0-beta.20"
@@ -8629,6 +8629,19 @@ strapi-utils@3.0.0-beta.20:
   version "3.0.0-beta.20"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.20.tgz#2e8b7cf32b64811d1c8ed8d3af2a9b9b06717970"
   integrity sha512-DyxYL2iJ8Xey0pUnrLEeWT7DQBFB4D2KIUsNJu6HIAvSyqZ/k4SpxC0Yz2QNCoHhoPMuhfuJIsxcwqmJzXD6Mw==
+  dependencies:
+    "@sindresorhus/slugify" "^0.11.0"
+    date-fns "^2.8.1"
+    lodash "4.17.12"
+    pino "^4.7.1"
+    pluralize "^7.0.0"
+    shelljs "^0.8.3"
+    yup "0.28.1"
+
+strapi-utils@3.0.0-beta.20.1:
+  version "3.0.0-beta.20.1"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.20.1.tgz#1b29a45e10f4eed1cafa6188e56b42e06f0ac135"
+  integrity sha512-Oe+/bC0EuvluB/fT2wBrrD4MGCKLBpx8AtMBCrg2WjIeMliLzcvwi69Ov0d+7+Dm6UY0ThEouSO/9t2j8czlQg==
   dependencies:
     "@sindresorhus/slugify" "^0.11.0"
     date-fns "^2.8.1"
