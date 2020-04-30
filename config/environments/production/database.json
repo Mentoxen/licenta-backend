@@ -4,10 +4,13 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "uri": "${process.env.DATABASE_URI}",
-        "database": "${process.env.DATABASE_NAME}"
+        "client": "mongo",
+        "uri": "mongodb://admin-iuliu:Phant0m07.@cluster0-shard-00-00-6thsa.mongodb.net:27017,cluster0-shard-00-01-6thsa.mongodb.net:27017,cluster0-shard-00-02-6thsa.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
+        "database": "licenta"
       },
-      "options": {}
+      "options": {
+        "ssl": true
+      }
     }
   }
 }
