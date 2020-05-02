@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "licenta2k20",
+    "api_key": "314323563682653",
+    "api_secret": "Xx9rwTzy0ZQdJQRM0yMBTpFqnAg"
+  }
+}
