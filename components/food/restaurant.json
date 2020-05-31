@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_food_restaurants",
+  "info": {
+    "name": "Restaurant",
+    "icon": "glass-cheers"
+  },
+  "options": {},
+  "attributes": {
+    "nume": {
+      "type": "string"
+    },
+    "descriere": {
+      "type": "richtext",
+      "required": true
+    },
+    "slider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

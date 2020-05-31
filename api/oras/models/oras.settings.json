@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "city",
+  "info": {
+    "name": "City"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nume": {
+      "type": "string",
+      "required": true
+    },
+    "imagine_oras": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "restaurants": {
+      "collection": "restaurant",
+      "via": "cities"
+    },
+    "food": {
+      "model": "food",
+      "via": "cities"
+    }
+  }
+}
