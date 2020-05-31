@@ -13,9 +13,20 @@
       "type": "string"
     },
     "cities": {
-      "via": "restaurants",
       "collection": "oras",
+      "via": "restaurants",
       "dominant": true
+    },
+    "banner": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
