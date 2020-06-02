@@ -1,0 +1,17 @@
+{
+  "collectionName": "statii",
+  "info": {
+    "name": "statii",
+    "icon": "bus"
+  },
+  "options": {},
+  "attributes": {
+    "nume_statie": {
+      "type": "string",
+      "required": true
+    },
+    "ora_statie": {
+      "type": "string"
+    }
+  }
+}

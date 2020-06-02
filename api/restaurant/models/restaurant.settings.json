@@ -12,10 +12,9 @@
     "nume": {
       "type": "string"
     },
-    "cities": {
-      "collection": "oras",
-      "via": "restaurants",
-      "dominant": true
+    "city": {
+      "model": "oras",
+      "via": "restaurants"
     },
     "banner": {
       "collection": "file",
@@ -27,6 +26,25 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "orar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "orar.orar"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adresa.adresa"
+    },
+    "descriere": {
+      "type": "richtext",
+      "required": false
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags"
     }
   }
 }

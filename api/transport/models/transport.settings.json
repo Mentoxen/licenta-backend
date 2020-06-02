@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transport_local",
+  "info": {
+    "name": "Transport local"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "linie": {
+      "type": "component",
+      "repeatable": true,
+      "component": "transport-linie.linie"
+    },
+    "city": {
+      "model": "oras",
+      "via": "transport"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "descriere": {
+      "type": "richtext"
+    }
+  }
+}

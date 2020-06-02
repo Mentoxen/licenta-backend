@@ -1,0 +1,27 @@
+{
+  "collectionName": "orar",
+  "info": {
+    "name": "orar",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "ora": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "Zile": {
+      "type": "enumeration",
+      "enum": [
+        "Luni",
+        "Marti",
+        "Miercuri",
+        "Joi",
+        "Vineri",
+        "Sambata",
+        "Duminica"
+      ]
+    }
+  }
+}

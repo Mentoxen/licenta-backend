@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transport_privats",
+  "info": {
+    "name": "Transport Privat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Taxi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "taxi.taxi"
+    },
+    "city": {
+      "model": "oras",
+      "via": "transport_privats"
+    }
+  }
+}

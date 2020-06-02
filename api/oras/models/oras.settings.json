@@ -24,13 +24,21 @@
       "plugin": "upload",
       "required": true
     },
-    "restaurants": {
-      "via": "cities",
-      "collection": "restaurant"
-    },
     "food": {
       "model": "food",
       "via": "cities"
+    },
+    "restaurants": {
+      "via": "city",
+      "collection": "restaurant"
+    },
+    "transport": {
+      "via": "city",
+      "model": "transport"
+    },
+    "transport_privats": {
+      "via": "city",
+      "collection": "transport-privat"
     }
   }
 }

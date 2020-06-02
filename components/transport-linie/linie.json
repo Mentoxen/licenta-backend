@@ -1,0 +1,19 @@
+{
+  "collectionName": "linii_autobuz",
+  "info": {
+    "name": "linie",
+    "icon": "train"
+  },
+  "options": {},
+  "attributes": {
+    "nume_linie": {
+      "type": "string",
+      "required": true
+    },
+    "statii": {
+      "type": "component",
+      "repeatable": true,
+      "component": "statii.statii"
+    }
+  }
+}

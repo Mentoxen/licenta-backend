@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transport-privats",
+      "handler": "transport-privat.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transport-privats/count",
+      "handler": "transport-privat.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transport-privats/:id",
+      "handler": "transport-privat.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transport-privats",
+      "handler": "transport-privat.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transport-privats/:id",
+      "handler": "transport-privat.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transport-privats/:id",
+      "handler": "transport-privat.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

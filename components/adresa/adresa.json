@@ -1,0 +1,21 @@
+{
+  "collectionName": "adress",
+  "info": {
+    "name": "adresa",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "adresa": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
