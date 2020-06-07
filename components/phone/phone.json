@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_phone_phones",
+  "info": {
+    "name": "phone",
+    "icon": "phone-square-alt"
+  },
+  "options": {},
+  "attributes": {
+    "provider": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    }
+  }
+}

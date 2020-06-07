@@ -16,6 +16,25 @@
     },
     "web": {
       "type": "string"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "descriere": {
+      "type": "richtext"
+    },
+    "pret": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tarif.tarif"
     }
   }
 }

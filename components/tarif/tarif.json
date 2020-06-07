@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_tarif_tarifs",
+  "info": {
+    "name": "tarif",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "zi": {
+      "type": "string"
+    },
+    "noapte": {
+      "type": "string"
+    }
+  }
+}

@@ -9,14 +9,41 @@
     "timestamps": true
   },
   "attributes": {
-    "Taxi": {
-      "type": "component",
-      "repeatable": true,
-      "component": "taxi.taxi"
+    "nume": {
+      "type": "string"
+    },
+    "descriere": {
+      "type": "richtext"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
     "city": {
       "model": "oras",
       "via": "transport_privats"
+    },
+    "pret": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tarif.tarif"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adresa.adresa"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": true,
+      "component": "phone.phone"
     }
   }
 }

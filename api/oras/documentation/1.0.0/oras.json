@@ -689,11 +689,29 @@
                 "id": {
                   "type": "string"
                 },
-                "Taxi": {
-                  "type": "component"
+                "nume": {
+                  "type": "string"
+                },
+                "descriere": {
+                  "type": "string"
+                },
+                "photos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "city": {
                   "type": "string"
+                },
+                "pret": {
+                  "type": "component"
+                },
+                "contact": {
+                  "type": "component"
+                },
+                "phone": {
+                  "type": "component"
                 }
               }
             }

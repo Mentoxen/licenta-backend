@@ -535,43 +535,71 @@
           "id": {
             "type": "string"
           },
-          "Taxi": {
+          "nume": {
+            "type": "string"
+          },
+          "descriere": {
+            "type": "string"
+          },
+          "photos": {
             "type": "array",
             "items": {
-              "type": "object",
               "required": [
-                "id"
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "nume": {
+                "name": {
                   "type": "string"
                 },
-                "contact": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "adresa",
-                    "phone"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "adresa": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "phone": {
-                      "type": "integer"
-                    }
-                  }
+                "alternativeText": {
+                  "type": "string"
                 },
-                "web": {
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
                   "type": "string"
                 }
               }
@@ -615,12 +643,46 @@
                 }
               }
             }
-          }
-        }
-      },
-      "NewTransport-privat": {
-        "properties": {
-          "Taxi": {
+          },
+          "pret": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "zi": {
+                "type": "string"
+              },
+              "noapte": {
+                "type": "string"
+              }
+            }
+          },
+          "contact": {
+            "type": "object",
+            "required": [
+              "id",
+              "adresa"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "adresa": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "web": {
+                "type": "string"
+              }
+            }
+          },
+          "phone": {
             "type": "array",
             "items": {
               "type": "object",
@@ -631,39 +693,85 @@
                 "id": {
                   "type": "string"
                 },
-                "nume": {
+                "provider": {
                   "type": "string"
                 },
-                "contact": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "adresa",
-                    "phone"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "adresa": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "phone": {
-                      "type": "integer"
-                    }
-                  }
-                },
-                "web": {
-                  "type": "string"
+                "number": {
+                  "type": "integer"
                 }
               }
             }
+          }
+        }
+      },
+      "NewTransport-privat": {
+        "properties": {
+          "nume": {
+            "type": "string"
+          },
+          "descriere": {
+            "type": "string"
           },
           "city": {
             "type": "string"
+          },
+          "pret": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "zi": {
+                "type": "string"
+              },
+              "noapte": {
+                "type": "string"
+              }
+            }
+          },
+          "contact": {
+            "type": "object",
+            "required": [
+              "id",
+              "adresa"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "adresa": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "web": {
+                "type": "string"
+              }
+            }
+          },
+          "phone": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            }
           }
         }
       }
