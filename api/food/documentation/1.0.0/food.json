@@ -618,6 +618,9 @@
               },
               "tags": {
                 "type": "component"
+              },
+              "user": {
+                "type": "string"
               }
             }
           },

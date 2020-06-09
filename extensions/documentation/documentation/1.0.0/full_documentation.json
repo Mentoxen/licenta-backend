@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/07/2020 7:37:03 PM"
+    "x-generation-date": "06/09/2020 11:31:04 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9655,6 +9655,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "restaurants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -9919,6 +9925,9 @@
               },
               "tags": {
                 "type": "component"
+              },
+              "user": {
+                "type": "string"
               }
             }
           },
@@ -10161,6 +10170,9 @@
                 },
                 "tags": {
                   "type": "component"
+                },
+                "user": {
+                  "type": "string"
                 }
               }
             }
@@ -10442,6 +10454,54 @@
                 }
               }
             }
+          },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "restaurants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -10524,6 +10584,9 @@
                 }
               }
             }
+          },
+          "user": {
+            "type": "string"
           }
         }
       },
@@ -11462,6 +11525,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "restaurants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -11588,6 +11657,46 @@
                 }
               }
             }
+          },
+          "restaurants": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nume": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "orar": {
+                  "type": "component"
+                },
+                "Contact": {
+                  "type": "component"
+                },
+                "descriere": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "component"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -11627,6 +11736,12 @@
             "type": "string"
           },
           "articles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "restaurants": {
             "type": "array",
             "items": {
               "type": "string"

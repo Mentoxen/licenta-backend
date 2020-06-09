@@ -56,6 +56,10 @@
     "articles": {
       "via": "users",
       "collection": "article"
+    },
+    "restaurants": {
+      "via": "user",
+      "collection": "restaurant"
     }
   }
 }

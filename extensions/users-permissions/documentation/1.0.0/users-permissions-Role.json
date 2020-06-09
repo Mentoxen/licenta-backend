@@ -614,6 +614,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "restaurants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }

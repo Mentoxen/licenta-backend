@@ -1275,6 +1275,46 @@
                 }
               }
             }
+          },
+          "restaurants": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nume": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "orar": {
+                  "type": "component"
+                },
+                "Contact": {
+                  "type": "component"
+                },
+                "descriere": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "component"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1314,6 +1354,12 @@
             "type": "string"
           },
           "articles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "restaurants": {
             "type": "array",
             "items": {
               "type": "string"

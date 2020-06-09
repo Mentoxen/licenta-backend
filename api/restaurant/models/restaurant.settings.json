@@ -45,6 +45,11 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tags"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "restaurants"
     }
   }
 }
