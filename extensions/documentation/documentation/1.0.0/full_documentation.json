@@ -27,7 +27,7 @@
       "description": "Development server"
     },
     {
-      "url": "YOUR_STAGING_SERVER",
+      "url": "https://licentaiuliu.herokuapp.com",
       "description": "Staging server"
     },
     {
